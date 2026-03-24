@@ -3,14 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet", href="style.css"/>
-    <title>Ved's Resume</title>
+    <title>Ved Narvekar - Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>HEllo</h1>
-    <button class="no-print" onclick="window.open('/download')">
-        Download PDF
-    </button>
-    
+
+    <div class="resume-container">
+        <header>
+            <h1>Ved Narvekar</h1>
+            <p>Mumbai | Phone: 9323021709 | ved.v.narvekar@gmail.com | LinkedIn Link | GitHub</p>
+        </header>
+
+        <section>
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="entry">
+                <div class="row">
+                    <strong>Mumbai University</strong>
+                </div>
+                <div class="row">
+                    <span>B.E. Artificial Intelligence & Machine Learning</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">SUMMARY</h2>
+            <div class="location-row">Mumbai</div>
+            <ul>
+                <li>AI & Machine Learning Engineering student with experience in developing scalable full-stack applications and AI-powered solutions.</li>
+                <li>Proof of work by building production-ready applications, implementing OCR systems with 90% accuracy, and leading technical teams of 4+ members.</li>
+                <li>Expertise in MERN stack development, Python, and integrating cutting-edge AI technologies for real-world applications.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="skills-content">
+                <p><strong>Skills:</strong> JavaScript, TypeScript, Next.js, MongoDB, Express.js, React, Node.js Python, Supabase, NextAuth, Git, GitHub, Tailwind CSS</p>
+                <ul>
+                    <li>DSA, Machine Learning, Deep Learning, NLP, DBMS</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">PROJECT EXPERIENCE</h2>
+            
+            <div class="project">
+                <div class="row">
+                    <strong>ThinkFast AI</strong>
+                </div>
+                <div class="row italic">
+                    (MERN, Next.js, TypeScript, OpenRouter API, OCR)
+                </div>
+                <p>Engineered an AI chatbot that acts as a personal assistant and companion</p>
+                <div class="location-row">Mumbai</div>
+                <ul>
+                    <li>Integrating Tesseract.js OCR for document/image text extraction, secure authentication with JWT, and file uploads with Multer.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="row">
+                    <strong>AI Expense Tracker</strong>
+                </div>
+                <div class="row italic">
+                    (Next.js, JavaScript, OCR, Al classification)
+                </div>
+                <div class="location-row">Mumbai</div>
+                <ul>
+                    <li>Developed an AI-powered expense tracking web application, achieving 90% accuracy in expense categorization through custom OCR implementation with Tesseract.js and PDF Plumber, reducing manual data entry time by 80%</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="row">
+                    <strong>Real-Time Chat App</strong>
+                </div>
+                <div class="row italic">
+                    (MERN, Socket.io, Tailwind, Zustand, ShadCN)
+                </div>
+                <ul>
+                    <li>Developed a comprehensive real-time messaging platform with instant message delivery and a 99% message success rate</li>
+                    <li>Implemented WebSocket communication using Socket.io for real-time bidirectional communication, including typing indicators, online status, and message read receipts</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">LEADERSHIP & ACTIVITIES</h2>
+            <div class="location-row">Mumbai</div>
+            
+            <div class="entry">
+                <div class="row">
+                    <strong>Universal College of Engineering</strong>
+                    <span class="date">Nov 2024 - Present</span>
+                </div>
+                <div class="row">
+                    <em>Committee Head: "Discipline & Anti - Ragging"</em>
+                    <span class="location">Vasai</span>
+                </div>
+                <ul>
+                    <li>Led a cross-functional team of 8 members to maintain discipline and ensure safe campus environment for 1,000+ students across multiple departments</li>
+                    <li>Coordinated with faculty, student council, and administration to resolve conflict cases effectively, achieving a 95% satisfaction rate in conflict resolution</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="row">
+                    <strong>Universal College of Engineering</strong>
+                    <span class="date">Nov 2024 - Present</span>
+                </div>
+                <div class="row">
+                    <em>Technical Projects: "Team Lead"</em>
+                </div>
+                <ul>
+                    <li>Manage and mentor a team of 4 developers in planning, developing, and deploying academic projects, maintaining a 100% on-time delivery record</li>
+                    <li>Led development of multilingual chatbot during hackathon, creating a fully functional prototype capable of understanding and responding in 10+ languages, including Hindi, English, and Spanish</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <ul>
+                <li>Complete Data Science, Machine Learning, DL, NLP Bootcamp -- Udemy (In Progress)</li>
+                <li>Node.js, Express, MongoDB & More: The Complete Bootcamp -- Udemy</li>
+                <li>The Ultimate React Course 2025: React, Next.js, Redux & More -- Udemy</li>
+            </ul>
+        </section>
+
+        <div class="button-container">
+            <button class="no-print" onclick="window.open('/download')">
+                Download PDF
+            </button>
+        </div>
+    </div>
+
 </body>
 </html>

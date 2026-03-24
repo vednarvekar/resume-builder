@@ -15,6 +15,14 @@ app.get("/download", async(req, res) => {
   const pdf = await page.pdf({
     format: "A4",
     printBackground: true,
+    displayHeaderFooter: false,
+    margin: {
+        top: "0px",    // Let CSS handle the padding
+        bottom: "0px",
+        left: "0px",
+        right: "0px"
+    },
+    preferCSSPageSize: true 
   });
   await browser.close();
 
