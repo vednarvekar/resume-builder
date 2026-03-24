@@ -1,0 +1,27 @@
+* {
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  font-family: Arial;
+  background: #eee;
+}
+
+#resume {
+  width: 210mm;
+  min-height: 297mm;
+  background: white;
+  margin: auto;
+  padding: 20mm;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
