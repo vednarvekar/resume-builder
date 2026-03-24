@@ -10,7 +10,9 @@ app.get("/download", async(req, res) => {
 
   await page.goto("http://localhost:3000/", {
     waitUntil: "networkidle0",
-  })
+  });
+
+  await page.emulateMediaType("print");
 
   const pdf = await page.pdf({
     format: "A4",

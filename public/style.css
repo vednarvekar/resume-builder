@@ -1,148 +1,292 @@
 * {
-  -webkit-print-color-adjust: exact;
-}
-
-body {
-  font-family: Arial;
-  background: #eee;
-}
-
-#resume {
-  width: 210mm;
-  min-height: 297mm;
-  background: white;
-  margin: auto;
-  padding: 20mm;
-}
-
-@page {
-  size: A4;
-  margin: 0;
-}
-
-@media print {
-  button {
-    display: none;
-  }
-}
-
-/* ----------------------------------------------------------------------------------- */
-
-/* General Reset */
-* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+:root {
+    --page-width: 210mm;
+    --page-padding-y: 13mm;
+    --page-padding-x: 14mm;
+    --ink: #000;
+    --muted: #1f1f1f;
+    --rule: #000;
+    --paper: #ffffff;
+    --surface: #ece9e1;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+html {
+    background: var(--surface);
 }
 
 body {
-    background-color: #f0f0f0;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.4;
-    color: #333;
-    padding: 40px 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #ece9e1 0%, #f7f4ee 100%);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.42;
+    padding: 32px 0;
 }
 
 .resume-container {
-    background-color: #fff;
-    width: 800px;
+    width: var(--page-width);
+    min-height: 297mm;
     margin: 0 auto;
-    padding: 50px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    min-height: 1000px;
+    padding: var(--page-padding-y) var(--page-padding-x);
+    background: var(--paper);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
 }
 
-/* Typography */
-h1 {
-    font-size: 24pt;
+header {
+    border-bottom: 1.5px solid var(--rule);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
     text-align: center;
+    break-inside: avoid;
+}
+
+h1 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    font-size: 23pt;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
+    color: var(--ink);
 }
 
 header p {
-    text-align: center;
-    font-size: 10pt;
-    margin-bottom: 20px;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    font-size: 9.5pt;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+section {
+    margin-top: 10px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
 }
 
 .section-title {
-    font-size: 12pt;
-    border-bottom: 1px solid #000;
-    margin-top: 15px;
-    margin-bottom: 8px;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    font-size: 10.5pt;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 6px;
     padding-bottom: 2px;
+    color: var(--ink);
 }
 
 .row {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 11pt;
+    gap: 12px;
+    font-size: 10.4pt;
+    color: var(--ink);
 }
 
-.location-row {
-    font-size: 10pt;
-    color: #555;
+.row strong {
+    font-weight: 700;
 }
 
-.italic {
+.location-row,
+.date,
+.location {
+    font-size: 9.5pt;
     font-style: italic;
-    font-size: 10pt;
+    color: var(--muted);
 }
 
-p, li {
-    font-size: 10.5pt;
-    margin-bottom: 4px;
+.italic,
+em {
+    font-style: italic;
+    color: var(--muted);
+}
+
+.skills-content p,
+p,
+li {
+    font-size: 10pt;
+    color: var(--ink);
 }
 
 ul {
-    margin-left: 20px;
+    margin: 4px 0 8px 18px;
+}
+
+li {
+    margin-bottom: 4px;
+    padding-left: 2px;
+}
+
+li::marker {
+    color: var(--ink);
+}
+
+.entry,
+.project,
+ul,
+li,
+.row,
+header {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.project,
+.entry {
     margin-bottom: 10px;
 }
 
-.project, .entry {
-    margin-bottom: 12px;
+.project > p {
+    margin-top: 2px;
+    font-style: italic;
 }
 
-.date {
-    font-weight: normal;
+.project-meta {
+    align-items: center;
+    gap: 10px;
 }
 
-/* Button Styling */
+.project-meta > span:first-child {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.project-links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    margin-left: auto;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #000;
+    border-radius: 999px;
+    padding: 4px 10px;
+    color: #000;
+    text-decoration: none;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    font-size: 8.8pt;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.project-links a:hover {
+    background: #111;
+    color: #fff;
+}
+
+.project-links svg {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+    flex: 0 0 auto;
+}
+
 .button-container {
+    margin-top: 18px;
     text-align: center;
-    margin-top: 30px;
 }
 
 .no-print {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    background: #111;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: 700;
+    letter-spacing: 0.04em;
     cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
 }
 
 .no-print:hover {
-    background-color: #0056b3;
+    background: #000;
 }
 
-/* Print Optimization */
-@media print {
-    body {
-        background-color: #fff;
-        padding: 0;
-    }
+@media screen {
     .resume-container {
+        max-width: calc(100vw - 32px);
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .project-meta {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .project-links {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media print {
+    html,
+    body {
+        width: var(--page-width);
+        background: var(--paper);
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-size: 10pt;
+    }
+
+    .resume-container {
+        width: var(--page-width);
+        min-height: auto;
         box-shadow: none;
         margin: 0;
-        width: 100%;
-        padding: 20px;
+        padding: var(--page-padding-y) var(--page-padding-x);
     }
+
+    .button-container,
     .no-print {
-        display: none;
+        display: none !important;
+    }
+
+    section + section {
+        margin-top: 8px;
+    }
+
+    h1,
+    .section-title,
+    .row,
+    .entry,
+    .project,
+    .project-links,
+    ul,
+    li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    p,
+    li {
+        orphans: 3;
+        widows: 3;
     }
 }
