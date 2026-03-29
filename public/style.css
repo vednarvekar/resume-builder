@@ -70,6 +70,30 @@ header p {
     color: var(--muted);
 }
 
+.header-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.header-contact a {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 999px;
+    padding: 4px 10px;
+    color: #000;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.header-contact a:hover {
+    background: #111;
+    color: #fff;
+}
+
 section {
     margin-top: 10px;
     break-inside: avoid-page;
@@ -120,6 +144,27 @@ p,
 li {
     font-size: 10pt;
     color: var(--ink);
+}
+
+.skills-group {
+    margin-bottom: 5px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.skills-group p {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    column-gap: 8px;
+    margin: 0;
+}
+
+.skills-group strong {
+    display: block;
+}
+
+.skills-group span {
+    display: block;
 }
 
 ul {
@@ -202,6 +247,17 @@ header {
     flex: 0 0 auto;
 }
 
+.cert-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cert-item > span:first-child {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
 .button-container {
     margin-top: 18px;
     text-align: center;
@@ -239,6 +295,11 @@ header {
     .project-links {
         width: 100%;
         margin-left: 0;
+    }
+
+    .cert-item {
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 }
 
