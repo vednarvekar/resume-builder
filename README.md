@@ -116,6 +116,6 @@ Make sure your CSS includes:
 
 ## 📌 Author
 
-Ved
+Ved Narvekar
 
 ---
