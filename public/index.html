@@ -1,251 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ved Narvekar - Resume</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ved Narvekar — Resume</title>
+<link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+<div class="page">
 
-    <div class="resume-container">
-        <header>
-            <h1>Ved Narvekar</h1>
-            <p class="header-contact">
-                <span>Mumbai</span>
-                <span>|</span>
-                <span>Phone: 9323021709</span>
-                <span>|</span>
-                <span>ved.v.narvekar@gmail.com</span>
-                <span>|</span>
-                <a href="https://vednarvekar.com" target="_blank" rel="noopener noreferrer">Portfolio Website</a>
-                <a href="https://github.com/vednarvekar" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </p>
-        </header>
+  <div class="header">
+    <h1>VED NARVEKAR</h1>
+    <div class="contact">
+      Mumbai, India
+      <span class="sep">|</span>
+      9323021709
+      <span class="sep">|</span>
+      <a href="mailto:ved.v.narvekar@gmail.com">ved.v.narvekar@gmail.com</a>
+      <span class="sep">|</span>
+      <a href="https://vednarvekar.com" target="_blank">vednarvekar.com</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/vednarvekar" target="_blank">github.com/vednarvekar</a>
+      <span class="sep">|</span>
+      <a href="https://linkedin.com/in/vednarvekar" target="_blank">linkedin.com/in/vednarvekar</a>
+    </div>
+  </div>
 
-        <section>
-            <h2 class="section-title">EDUCATION</h2>
-            <div class="entry">
-                <div class="row">
-                    <strong>Mumbai University</strong>
-                </div>
-                <div class="row">
-                    <span>B.E. Artificial Intelligence & Machine Learning</span> <span>Graduation: Apr - 2028</span>
-                </div>
-            </div>
-        </section>
+  <div class="section-title">Summary</div>
+  <p class="summary">
+    Backend &amp; AI Engineer with hands-on experience building production-grade systems — from high-throughput API gateways
+    handling 6,000+ RPS to autonomous LLM-powered CLI agents. Comfortable across the full stack (Node.js, TypeScript, Python)
+    with a strong emphasis on system design, performance, and applied AI/ML. Seeking backend or AI engineering internships
+    where I can ship real, measurable impact.
+  </p>
 
-        <section>
-            <h2 class="section-title">SUMMARY</h2>
-            <!-- <div class="location-row">Mumbai</div> -->
-            <p>
-                Software & Machine Learning Engineer with a strong foundation in building high-performance backend systems, deep learning models, and autonomous AI tools. 
-            </p>
-            <p>    
-                Experienced in moving beyond standard full-stack development to architect custom infrastructure from scratch, including low-latency API gateways and optimized reverse proxies.
-            </p>
-            <p>
-                On the AI side, focuses on practical machine learning applications, such as training multi-branch CNN architectures for financial market analysis and developing agentic CLI tools utilizing advanced RAG pipelines.
-            </p>
-        </section>
+  <div class="section-title">Education</div>
+  <div class="row">
+    <div class="row-left">
+      <div class="job-title">Mumbai University — B.E. Artificial Intelligence &amp; Machine Learning</div>
+    </div>
+    <div class="row-right">Expected Apr 2028</div>
+  </div>
+  <div class="edu-meta">
+    Universal College of Engineering, Mumbai &nbsp;|&nbsp; Discipline &amp; Anti-Ragging Committee Head
+  </div>
 
-        <section>
-            <h2 class="section-title">TECHNICAL SKILLS</h2>
-            <div class="skills-content">
-                <div class="skills-group">
-                    <p><strong>- Programming & CS:</strong><span>C++, JavaScript, TypeScript, React, Data Structures & Algorithms, Object-Oriented Programming</span></p>
-                </div>
-                <div class="skills-group">
-                    <p><strong>- Backend Development:</strong><span>Node.js, Express.js, REST APIs, Authentication & Authorization, Backend System Design</span></p>
-                </div>
-                <div class="skills-group">
-                    <p><strong>- Databases:</strong><span>MongoDB, PostgreSQL, Redis, Database Design</span></p>
-                </div>
-                <div class="skills-group">
-                    <p><strong>- AI / ML:</strong><span>Machine Learning, Python, NumPy, Pandas, PyTorch, Scikit-learn, Langchain</span></p>
-                </div>
-                <div class="skills-group">
-                    <p><strong>- Tools & Workflow:</strong><span>Git, GitHub, Linux, Postman</span></p>
-                </div>
-                <div class="skills-group">
-                    <p><strong>- Web:</strong><span>HTML, CSS, MERN Stack</span></p>
-                </div>
-            </div>
-        </section>
+  <div class="section-title">Experience</div>
+  <div class="row">
+    <div class="row-left">
+      <div class="job-title">Backend Engineer Intern — SR India</div>
+    </div>
+    <div class="row-right">Jan 2026 – Feb 2026 · Remote</div>
+  </div>
+  <ul class="bullets">
+    <li>Designed and shipped REST API endpoints using Node.js and Express, targeted query optimisation and Redis caching.</li>
+    <li>Implemented JWT-based authentication and role-based access control (RBAC), eliminating unauthorised-access surface for 3 client-facing services.</li>
+    <li>Collaborated with frontend team to integrate APIs into a React dashboard, cutting integration round-trips from 3 to 1 per feature release.</li>
+  </ul>
 
-        <section>
-            <h2 class="section-title">PROJECT EXPERIENCE</h2>
+  <div class="section-title">Projects</div>
 
-            <div class="project">
-                <div class="row">
-                    <strong>Pixel - ML Image Analyzer</strong>
-                </div>
-                <div class="row italic project-meta">
-                    <span>(ResNet18, Pytorch, Supabase, Node.js, React)</span>
-                    <span class="project-links">
-                        <a href="https://github.com/vednarvekar/Pixel" target="_blank" rel="noopener noreferrer" aria-label="ThinkFast AI GitHub">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 2C6.477 2 2 6.589 2 12.25c0 4.528 2.865 8.37 6.839 9.727.5.096.682-.223.682-.495 0-.244-.009-.89-.014-1.747-2.782.617-3.37-1.384-3.37-1.384-.455-1.185-1.11-1.5-1.11-1.5-.908-.637.069-.624.069-.624 1.004.072 1.532 1.056 1.532 1.056.892 1.568 2.341 1.115 2.91.853.091-.663.35-1.116.636-1.372-2.221-.261-4.555-1.139-4.555-5.07 0-1.12.389-2.037 1.029-2.754-.103-.262-.446-1.314.098-2.739 0 0 .84-.277 2.75 1.052A9.303 9.303 0 0 1 12 6.833c.85.004 1.706.118 2.505.346 1.909-1.329 2.748-1.052 2.748-1.052.546 1.425.203 2.477.1 2.739.641.717 1.027 1.635 1.027 2.754 0 3.941-2.338 4.806-4.566 5.062.359.319.679.946.679 1.907 0 1.378-.012 2.489-.012 2.827 0 .275.18.596.688.494C19.138 20.616 22 16.776 22 12.25 22 6.589 17.523 2 12 2Z"/>
-                            </svg>
-                            <span>Code</span>
-                        </a>
-                        <a href="https://pixel-hosting-mu.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="ThinkFast AI Demo">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
-                            </svg>
-                            <span>Demo</span>
-                        </a>
-                    </span>
-                </div>
-                <!-- <p>Engineered an AI chatbot that acts as a personal assistant and companion</p> -->
-                <!-- <div class="location-row">Mumbai</div> -->
-                <ul>
-                    <li>
-                        ML model <strong>ResNet18</strong> powered image analyzer that detects whether an image is real or AI-generated.
-                    </li>
-                    <li>
-                        Trained with over 1000 images and with an accuracy of 88%. Combines ML model output, metadata verification, and image hashes to generate a score out of 100.
-                    </li>
-                </ul>
-            </div>
+  <div class="row">
+    <div class="row-left">
+      <div class="proj-title">resolv — AI-Powered GitHub Issue Resolver CLI</div>
+      <div class="proj-stack">TypeScript · Node.js · LLM APIs · RAG</div>
+    </div>
+    <div class="row-right">
+      <a href="https://github.com/vednarvekar/resolv-v2" target="_blank" style="color:var(--accent);text-decoration:none;">Code</a>
+      &nbsp;/&nbsp;
+      <a href="#" target="_blank" style="color:var(--accent);text-decoration:none;">Demo</a>
+    </div>
+  </div>
+  <ul class="bullets">
+    <li>Built an autonomous CLI agent that fetches GitHub issues, fingerprints repo "DNA" (naming conventions, patterns, style), and generates style-matched patches via an LLM tool-calling loop — reducing time-to-fix for targeted issues to under 60 seconds.</li>
+    <li>Integrated 7 LLM providers (Anthropic, OpenAI, Gemini, Grok, OpenRouter, NVIDIA NIM, Ollama) through a unified <code>OpenAICompatProvider</code> base class, making provider-switching a single config change.</li>
+    <li>Shipped production features: web search (Brave + DuckDuckGo fallback), <code>grep_codebase</code> + <code>write_file</code> tools, persistent chat sessions with <code>/resume</code> / <code>/sessions</code> / <code>/history</code> commands, and a polished first-run setup wizard.</li>
+    <li>Reduced repo-DNA context size from 7,000+ line JSON payloads to a lean summary, cutting LLM token usage by ~70% without sacrificing pattern fidelity.</li>
+  </ul>
 
-            <div class="project">
-                <div class="row">
-                    <strong>resolv-v2</strong>
-                </div>
-                <div class="row italic project-meta">
-                    <span>(TypeScript, Commander.js, LLM Providers )</span>
-                    <span class="project-links">
-                        <a href="https://github.com/vednarvekar/resolv-v2" target="_blank" rel="noopener noreferrer" aria-label="AI Expense Tracker GitHub">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 2C6.477 2 2 6.589 2 12.25c0 4.528 2.865 8.37 6.839 9.727.5.096.682-.223.682-.495 0-.244-.009-.89-.014-1.747-2.782.617-3.37-1.384-3.37-1.384-.455-1.185-1.11-1.5-1.11-1.5-.908-.637.069-.624.069-.624 1.004.072 1.532 1.056 1.532 1.056.892 1.568 2.341 1.115 2.91.853.091-.663.35-1.116.636-1.372-2.221-.261-4.555-1.139-4.555-5.07 0-1.12.389-2.037 1.029-2.754-.103-.262-.446-1.314.098-2.739 0 0 .84-.277 2.75 1.052A9.303 9.303 0 0 1 12 6.833c.85.004 1.706.118 2.505.346 1.909-1.329 2.748-1.052 2.748-1.052.546 1.425.203 2.477.1 2.739.641.717 1.027 1.635 1.027 2.754 0 3.941-2.338 4.806-4.566 5.062.359.319.679.946.679 1.907 0 1.378-.012 2.489-.012 2.827 0 .275.18.596.688.494C19.138 20.616 22 16.776 22 12.25 22 6.589 17.523 2 12 2Z"/>
-                            </svg>
-                            <span>Code</span>
-                        </a>
-                        <a href="https://github.com/vednarvekar/resolv-v2" target="_blank" rel="noopener noreferrer" aria-label="AI Expense Tracker Demo">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
-                            </svg>
-                            <span>Demo</span>
-                        </a>
-                    </span>
-                </div>
-                <!-- <div class="location-row">Mumbai</div> -->
-                <ul>
-                    <li>
-                        Tool that helps developers analyze and resolve GitHub issues using AI-driven code analysis.
-                    </li>
-                    <li>
-                        An AI-powered TypeScript CLI tool that maps codebases via RAG and uses NVIDIA NIM APIs to autonomously find and fix GitHub issues in secure sandboxes.
-                </ul>
-            </div>
+  <div class="row">
+    <div class="row-left">
+      <div class="proj-title">API Gateway — High-Performance Reverse Proxy</div>
+      <div class="proj-stack">Node.js · Fastify · Redis · PostgreSQL</div>
+    </div>
+    <div class="row-right">
+      <a href="https://github.com/vednarvekar/api-gateway" target="_blank" style="color:var(--accent);text-decoration:none;">Code</a>
+      &nbsp;/&nbsp;
+      <a href="#" target="_blank" style="color:var(--accent);text-decoration:none;">Demo</a>
+    </div>
+  </div>
+  <ul class="bullets">
+    <li>Architected a production-grade API gateway from scratch achieving <b>~6,000 RPS at 250 concurrent users</b> in load tests — outperforming naive Express proxies by 4×.</li>
+    <li>Engineered distributed rate limiting (Redis sliding window), circuit breaking (opossum), and response caching, reducing downstream service load by ~40% under simulated burst traffic.</li>
+    <li>Implemented JWT auth + RBAC, Prometheus metrics endpoint, and Drizzle ORM migrations — enabling zero-downtime schema changes across all environments.</li>
+  </ul>
 
-            <div class="project">
-                <div class="row">
-                    <strong>API - Gateway</strong>
-                </div>
-                <div class="row italic project-meta">
-                    <span>(Node.js, Fastify, Redis)</span>
-                    <span class="project-links">
-                        <a href="https://github.com/vednarvekar/api-gateway" target="_blank" rel="noopener noreferrer" aria-label="API - Gateway GitHub">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 2C6.477 2 2 6.589 2 12.25c0 4.528 2.865 8.37 6.839 9.727.5.096.682-.223.682-.495 0-.244-.009-.89-.014-1.747-2.782.617-3.37-1.384-3.37-1.384-.455-1.185-1.11-1.5-1.11-1.5-.908-.637.069-.624.069-.624 1.004.072 1.532 1.056 1.532 1.056.892 1.568 2.341 1.115 2.91.853.091-.663.35-1.116.636-1.372-2.221-.261-4.555-1.139-4.555-5.07 0-1.12.389-2.037 1.029-2.754-.103-.262-.446-1.314.098-2.739 0 0 .84-.277 2.75 1.052A9.303 9.303 0 0 1 12 6.833c.85.004 1.706.118 2.505.346 1.909-1.329 2.748-1.052 2.748-1.052.546 1.425.203 2.477.1 2.739.641.717 1.027 1.635 1.027 2.754 0 3.941-2.338 4.806-4.566 5.062.359.319.679.946.679 1.907 0 1.378-.012 2.489-.012 2.827 0 .275.18.596.688.494C19.138 20.616 22 16.776 22 12.25 22 6.589 17.523 2 12 2Z"/>
-                            </svg>
-                            <span>Code</span>
-                        </a>
-                        <a href="https://github.com/vednarvekar/api-gateway" target="_blank" rel="noopener noreferrer" aria-label="API - Gateway Demo">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
-                            </svg>
-                            <span>Demo</span>
-                        </a>
-                    </span>
-                </div>
-                <ul>
-                    <li>
-                        Node.js API Gateway & Reverse Proxy built with Fastify, TypeScript, Redis, and Postgres. Handles Auth, Rate Limiting, Caching, and Resiliency out of the box.
-                    <!-- <li>
-                        
-                    </li> -->
-                </ul>
-            </div>
-        </section>
+  <div class="row">
+    <div class="row-left">
+      <div class="proj-title">Pixel — AI Image Authenticity Analyzer</div>
+      <div class="proj-stack">PyTorch · ResNet18 · Node.js · React</div>
+    </div>
+    <div class="row-right">
+      <a href="https://github.com/vednarvekar/Pixel" target="_blank" style="color:var(--accent);text-decoration:none;">Code</a>
+      &nbsp;/&nbsp;
+      <a href="#" target="_blank" style="color:var(--accent);text-decoration:none;">Demo</a>
+    </div>
+  </div>
+  <ul class="bullets">
+    <li>Fine-tuned ResNet18 on 1,000+ images to classify real vs. AI-generated content, achieving <b>88% validation accuracy</b> — exceeding the 80% project benchmark.</li>
+    <li>Engineered a multi-signal scoring pipeline (model confidence + EXIF metadata verification + perceptual hash) that produces a composite 0–100 authenticity score, improving decision clarity over single-model output.</li>
+    <li>Deployed full-stack via Supabase + Node.js backend and React frontend; end-to-end inference latency under 1.2 seconds per image.</li>
+  </ul>
 
-        <!--
-        <section>
-            <h2 class="section-title">LEADERSHIP & ACTIVITIES</h2>
-            <div class="location-row">Mumbai</div>
+  <div class="section-title">Technical Skills</div>
+  <div class="skills-grid">
+    <div class="skill-row">
+      <span class="skill-cat">Languages:</span>
+      <span class="skill-val">TypeScript, JavaScript, Python, C++</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-cat">Backend:</span>
+      <span class="skill-val">Node.js, Fastify, Express.js, REST APIs, System Design, Auth/RBAC</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-cat">AI / ML:</span>
+      <span class="skill-val">PyTorch, NumPy, Pandas, Scikit-learn, LangChain, RAG Pipelines, LLM Tool-calling, Prompt Engineering</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-cat">Databases:</span>
+      <span class="skill-val">PostgreSQL, MongoDB, Redis, Drizzle ORM, Database Design</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-cat">Cloud &amp; DevOps:</span>
+      <span class="skill-val">Linux, Git, GitHub Actions, Prometheus, Postman, Docker (basic)</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-cat">Frontend:</span>
+      <span class="skill-val">React, Next.js, HTML/CSS, MERN Stack</span>
+    </div>
+  </div>
 
-            <div class="entry">
-                <div class="row">
-                    <strong>Universal College of Engineering</strong>
-                    <span class="date">Nov 2024 - Present</span>
-                </div>
-                <div class="row">
-                    <em>Committee Head: "Discipline & Anti - Ragging"</em>
-                    <span class="location">Vasai</span>
-                </div>
-                <ul>
-                    <li>Led a cross-functional team of 8 members to maintain discipline and ensure safe campus environment for 1,000+ students across multiple departments</li>
-                    <li>Coordinated with faculty, student council, and administration to resolve conflict cases effectively, achieving a 95% satisfaction rate in conflict resolution</li>
-                </ul>
-            </div>
+  <div class="section-title">Certifications</div>
+  <ul class="bullets certs">
+    <li>Complete Data Science, Machine Learning, DL &amp; NLP Bootcamp — Udemy</li>
+    <li>Node.js, Express, MongoDB &amp; More: The Complete Bootcamp — Udemy</li>
+    <li>The Ultimate React Course 2025: React, Next.js, Redux &amp; More — Udemy</li>
+  </ul>
 
-            <div class="entry">
-                <div class="row">
-                    <strong>Universal College of Engineering</strong>
-                    <span class="date">Nov 2024 - Present</span>
-                </div>
-                <div class="row">
-                    <em>Technical Projects: "Team Lead"</em>
-                </div>
-                <ul>
-                    <li>Manage and mentor a team of 4 developers in planning, developing, and deploying academic projects, maintaining a 100% on-time delivery record</li>
-                    <li>Led development of multilingual chatbot during hackathon, creating a fully functional prototype capable of understanding and responding in 10+ languages, including Hindi, English, and Spanish</li>
-                </ul>
-            </div>
-        </section>
-        -->
-
-        <section>
-            <h2 class="section-title">CERTIFICATIONS</h2>
-            <ul>
-                <li>Complete Data Science, Machine Learning, DL, NLP Bootcamp -- Udemy</li>
-                <li>
-                    <div class="cert-item">
-                        <span>Node.js, Express, MongoDB & More: The Complete Bootcamp -- Udemy</span>
-                        <span class="project-links">
-                            <a href="https://www.udemy.com/certificate/UC-3b083073-814e-4f53-8e5f-92256127e32e/" target="_blank" rel="noopener noreferrer" aria-label="Real-Time Chat App Demo">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
-                                </svg>
-                                <span>Link</span>
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li>
-                    <div class="cert-item">
-                        <span>The Ultimate React Course 2025: React, Next.js, Redux & More -- Udemy</span>
-                        <span class="project-links">
-                            <a href="https://www.udemy.com/certificate/UC-1594f46f-739b-4902-9dee-7cf213e7dbb7/" target="_blank" rel="noopener noreferrer" aria-label="Real-Time Chat App Demo">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
-                                </svg>
-                                <span>Link</span>
-                            </a>
-                        </span>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
+</div>
         <div class="button-container">
             <button class="no-print" onclick="window.open('/download')">
                 Download PDF
             </button>
         </div>
-    </div>
-
 </body>
 </html>
