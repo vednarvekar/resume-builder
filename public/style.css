@@ -45,6 +45,8 @@ body {
 }
 .header .contact a { color: var(--accent); text-decoration: none; }
 .header .contact a:hover { text-decoration: underline; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
 .sep { margin: 0 5px; color: var(--lgray); }
 
 /* ── Section header ── */
@@ -168,7 +170,44 @@ body {
         min-height: 11in;
         box-shadow: none;
         margin: 0;
-        padding: 0.45in 0.55in;
+        padding: 0.38in 0.52in;
+    }
+
+    .header {
+        margin-bottom: 7px;
+    }
+
+    .section-title {
+        margin-top: 9px;
+        margin-bottom: 4px;
+        padding-bottom: 3px;
+    }
+
+    .summary {
+        line-height: 1.42;
+    }
+
+    .row {
+        margin-top: 5px;
+        margin-bottom: 1px;
+    }
+
+    .bullets {
+        margin-top: 2px;
+    }
+
+    .bullets li,
+    .skill-row,
+    .edu-meta {
+        line-height: 1.38;
+    }
+
+    .bullets li {
+        margin-bottom: 1px;
+    }
+
+    .skill-row {
+        margin-bottom: 2px;
     }
 
     .button-container,
