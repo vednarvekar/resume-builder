@@ -9,147 +9,110 @@
 <body>
 <div class="page">
 
+  <!-- HEADER -->
   <div class="header">
     <h1>VED NARVEKAR</h1>
     <div class="contact">
-      Mumbai, India
-      <span class="sep">|</span>
-      9323021709
-      <span class="sep">|</span>
-      <a href="mailto:ved.v.narvekar@gmail.com">ved.v.narvekar@gmail.com</a>
-      <span class="sep">|</span>
-      <a href="https://vednarvekar.com" target="_blank">vednarvekar.com</a>
-      <span class="sep">|</span>
-      <a href="https://github.com/vednarvekar" target="_blank">github.com/vednarvekar</a>
-      <span class="sep">|</span>
+      Mumbai, India <span class="sep">|</span>
+      9323021709 <span class="sep">|</span>
+      <a href="mailto:ved.v.narvekar@gmail.com">ved.v.narvekar@gmail.com</a> <span class="sep">|</span>
+      <a href="https://vednarvekar.com" target="_blank">vednarvekar.com</a> <span class="sep">|</span>
+      <a href="https://github.com/vednarvekar" target="_blank">github.com/vednarvekar</a> <span class="sep">|</span>
       <a href="https://linkedin.com/in/vednarvekar" target="_blank">linkedin.com/in/vednarvekar</a>
     </div>
   </div>
 
+  <!-- SUMMARY -->
   <div class="section-title">Summary</div>
   <p class="summary">
-    Backend &amp; AI Engineer focused on Node.js, TypeScript, Python, system design, and applied AI/ML.
-    Built REST APIs, high-throughput gateways, LLM-powered CLI agents, and ML-backed web apps with measurable performance impact.
-    Seeking backend or AI engineering internships where I can ship reliable production features.
+    Backend &amp; AI Engineer with hands-on experience building production-grade systems — high-throughput API gateways
+    handling 6,000+ RPS, autonomous LLM-powered CLI agents with multi-provider support, and ML-backed web applications
+    with measurable performance outcomes. Proficient in Node.js, TypeScript, Python, system design, and applied AI/ML.
+    Seeking backend or AI engineering internships to ship reliable, impactful production features.
   </p>
 
+  <!-- EDUCATION -->
   <div class="section-title">Education</div>
-  <div class="row">
-    <div class="row-left">
-      <div class="job-title">Mumbai University — B.E. Artificial Intelligence &amp; Machine Learning</div>
-    </div>
-    <div class="row-right">Expected Apr 2028</div>
-  </div>
-  <div class="edu-meta">
-    Universal College of Engineering, Mumbai &nbsp;|&nbsp; Discipline &amp; Anti-Ragging Committee Head
-  </div>
+  <table class="row-table"><tr>
+    <td class="td-left"><span class="entry-title">Mumbai University — B.E. Artificial Intelligence &amp; Machine Learning</span></td>
+    <td class="td-right">Expected Apr 2028</td>
+  </tr></table>
+  <div class="sub-meta">Universal College of Engineering, Mumbai &nbsp;|&nbsp; Discipline &amp; Anti-Ragging Committee Head</div>
 
+  <!-- EXPERIENCE -->
   <div class="section-title">Experience</div>
-  <div class="row">
-    <div class="row-left">
-      <div class="job-title">Backend Engineer Intern — SR India</div>
-    </div>
-    <div class="row-right">Jan 2026 – Feb 2026 · Remote</div>
-  </div>
+  <table class="row-table"><tr>
+    <td class="td-left"><span class="entry-title">Backend Engineer Intern — SR India</span></td>
+    <td class="td-right">Jan 2026 – Feb 2026 · Remote</td>
+  </tr></table>
   <ul class="bullets">
-    <li>Built backend APIs for a hotel booking management platform using Node.js, Express, REST, and structured database models.</li>
-    <li>Implemented booking, room availability, user, and admin-management flows with JWT authentication and role-based access control.</li>
-    <li>Improved API reliability with input validation, targeted query optimization, Redis caching, and React dashboard integration.</li>
-    <li>Tested endpoints with Postman and documented request/response contracts for smoother frontend-backend collaboration.</li>
+    <li>Engineered REST APIs for a hotel booking platform (Node.js, Express, PostgreSQL) covering 4 core modules — bookings, room availability, user management, and admin controls — with JWT auth and RBAC.</li>
+    <li>Improved API performance and reliability through targeted query optimization, input validation, and Redis caching; eliminated redundant DB calls across high-frequency booking endpoints.</li>
+    <li>Integrated all endpoints into a React dashboard and maintained Postman collections documenting request/response contracts, enabling zero back-and-forth handoffs with the frontend team.</li>
   </ul>
 
+  <!-- PROJECTS -->
   <div class="section-title">Projects</div>
 
-  <div class="row">
-    <div class="row-left">
-      <div class="proj-title">resolv — AI-Powered GitHub Issue Resolver CLI</div>
-      <div class="proj-stack">TypeScript · Node.js · LLM APIs · RAG</div>
-    </div>
-    <div class="row-right">
-      <a href="https://github.com/vednarvekar/resolv-v2" target="_blank" style="color:var(--accent);text-decoration:none;">Code</a>
-      &nbsp;/&nbsp;
-      <a href="#" target="_blank" style="color:var(--accent);text-decoration:none;">Demo</a>
-    </div>
-  </div>
+  <table class="row-table"><tr>
+    <td class="td-left">
+      <span class="entry-title">resolv — AI-Powered GitHub Issue Resolver CLI</span>
+      <span class="entry-stack">TypeScript · Node.js · LLM APIs · RAG Pipelines · ts-morph</span>
+    </td>
+    <td class="td-right"><a href="https://github.com/vednarvekar/resolv-v2" target="_blank">GitHub</a></td>
+  </tr></table>
   <ul class="bullets">
-    <li>Built an autonomous CLI agent that fetches GitHub issues, analyzes repo patterns, and generates style-matched patches in under 60 seconds.</li>
-    <li>Integrated 7 LLM providers through a unified OpenAI-compatible provider layer, enabling one-config provider switching.</li>
-    <li>Shipped RAG, web search, codebase grep/write tools, persistent chat sessions, and repo-context compression that cut token usage by ~70%.</li>
+    <li>Autonomous CLI agent that fetches GitHub issues, fingerprints repo coding patterns via RAG (ts-morph DNA extraction + NIM embeddings), and generates style-matched patches via an LLM tool-calling loop in under 60 seconds.</li>
+    <li>Unified 7 LLM providers (Anthropic, OpenAI, Gemini, Grok, OpenRouter, NVIDIA NIM, Ollama) behind a single OpenAI-compatible interface — switching providers requires one config change.</li>
+    <li>Shipped web search (Brave + DuckDuckGo fallback), codebase grep/write tools, persistent chat sessions (/resume, /sessions, /history), and repo-context compression cutting LLM token usage by ~70%.</li>
   </ul>
 
-  <div class="row">
-    <div class="row-left">
-      <div class="proj-title">API Gateway — High-Performance Reverse Proxy</div>
-      <div class="proj-stack">Node.js · Fastify · Redis · PostgreSQL</div>
-    </div>
-    <div class="row-right">
-      <a href="https://github.com/vednarvekar/api-gateway" target="_blank" style="color:var(--accent);text-decoration:none;">Code</a>
-      &nbsp;/&nbsp;
-      <a href="#" target="_blank" style="color:var(--accent);text-decoration:none;">Demo</a>
-    </div>
-  </div>
+  <table class="row-table"><tr>
+    <td class="td-left">
+      <span class="entry-title">API Gateway — High-Performance Reverse Proxy</span>
+      <span class="entry-stack">Node.js · Fastify · TypeScript · Redis · PostgreSQL · Prometheus</span>
+    </td>
+    <td class="td-right"><a href="https://github.com/vednarvekar/api-gateway" target="_blank">GitHub</a></td>
+  </tr></table>
   <ul class="bullets">
-    <li>Architected a Fastify API gateway reaching <b>~6,000 RPS at 250 concurrent users</b>, outperforming naive Express proxies by 4×.</li>
-    <li>Implemented Redis rate limiting, circuit breaking, response caching, JWT/RBAC, Prometheus metrics, and Drizzle ORM migrations.</li>
-    <li>Reduced downstream service load by ~40% under simulated burst traffic through caching and resilient proxy controls.</li>
+    <li>Architected a production-grade API gateway from scratch reaching <strong>~6,000 RPS at 250 concurrent users</strong>, outperforming naive Express proxies by 4×; load-tested with autocannon.</li>
+    <li>Implemented Redis sliding-window rate limiting, circuit breaking (opossum), response caching, JWT/RBAC, Prometheus metrics, and Drizzle ORM migrations — reduced downstream service load by ~40% under burst traffic.</li>
   </ul>
 
-  <div class="row">
-    <div class="row-left">
-      <div class="proj-title">Pixel — AI Image Authenticity Analyzer</div>
-      <div class="proj-stack">PyTorch · ResNet18 · Node.js · React</div>
-    </div>
-    <div class="row-right">
-      <a href="https://github.com/vednarvekar/Pixel" target="_blank" style="color:var(--accent);text-decoration:none;">Code</a>
-      &nbsp;/&nbsp;
-      <a href="#" target="_blank" style="color:var(--accent);text-decoration:none;">Demo</a>
-    </div>
-  </div>
+  <table class="row-table"><tr>
+    <td class="td-left">
+      <span class="entry-title">Pixel — AI Image Authenticity Analyzer</span>
+      <span class="entry-stack">PyTorch · ResNet18 · Node.js · React · Supabase</span>
+    </td>
+    <td class="td-right"><a href="https://github.com/vednarvekar/Pixel" target="_blank">GitHub</a></td>
+  </tr></table>
   <ul class="bullets">
-    <li>Fine-tuned ResNet18 on 1,000+ images to classify real vs. AI-generated content, achieving <b>88% validation accuracy</b>.</li>
-    <li>Built a Node.js/React app with EXIF, perceptual hash, and model-confidence scoring; inference latency under 1.2 seconds.</li>
+    <li>Fine-tuned ResNet18 on 1,000+ images to classify real vs. AI-generated content, achieving <strong>88% validation accuracy</strong> — exceeding the 80% project benchmark.</li>
+    <li>Developed a multi-signal scoring pipeline (model confidence + EXIF metadata + perceptual hash) producing a 0–100 authenticity score; full-stack deployment with end-to-end inference under 1.2 seconds.</li>
   </ul>
 
+  <!-- SKILLS -->
   <div class="section-title">Technical Skills</div>
-  <div class="skills-grid">
-    <div class="skill-row">
-      <span class="skill-cat">Languages:</span>
-      <span class="skill-val">TypeScript, JavaScript, Python, C++</span>
-    </div>
-    <div class="skill-row">
-      <span class="skill-cat">Backend:</span>
-      <span class="skill-val">Node.js, Fastify, Express.js, REST APIs, System Design, Auth/RBAC</span>
-    </div>
-    <div class="skill-row">
-      <span class="skill-cat">AI / ML:</span>
-      <span class="skill-val">PyTorch, NumPy, Pandas, Scikit-learn, LangChain, RAG, LLM Tool-calling</span>
-    </div>
-    <div class="skill-row">
-      <span class="skill-cat">Databases:</span>
-      <span class="skill-val">PostgreSQL, MongoDB, Redis, Drizzle ORM, Database Design</span>
-    </div>
-    <div class="skill-row">
-      <span class="skill-cat">Cloud &amp; DevOps:</span>
-      <span class="skill-val">Linux, Git, GitHub Actions, Prometheus, Postman, Docker, AWS, System Design</span>
-    </div>
-    <div class="skill-row">
-      <span class="skill-cat">Frontend:</span>
-      <span class="skill-val">React, Next.js, HTML/CSS, MERN Stack</span>
-    </div>
-  </div>
+  <table class="skills-table">
+    <tr><td class="sk-cat">Languages:</td><td class="sk-val">TypeScript, JavaScript, Python, C++</td></tr>
+    <tr><td class="sk-cat">Backend:</td><td class="sk-val">Node.js, Fastify, Express.js, REST APIs, System Design, Authentication, Authorization, RBAC</td></tr>
+    <tr><td class="sk-cat">AI / ML:</td><td class="sk-val">PyTorch, NumPy, Pandas, Scikit-learn, LangChain, RAG Pipelines, LLM Tool-calling, Prompt Engineering</td></tr>
+    <tr><td class="sk-cat">Databases:</td><td class="sk-val">PostgreSQL, MongoDB, Redis, Drizzle ORM, Database Design</td></tr>
+    <tr><td class="sk-cat">DevOps:</td><td class="sk-val">Linux, Git, GitHub Actions, Prometheus, Docker, AWS, Postman</td></tr>
+    <tr><td class="sk-cat">Frontend:</td><td class="sk-val">React, Next.js, HTML, CSS, MERN Stack</td></tr>
+  </table>
 
+  <!-- CERTIFICATIONS -->
   <div class="section-title">Certifications</div>
-  <ul class="bullets certs">
+  <ul class="bullets">
     <li>Complete Data Science, Machine Learning, DL &amp; NLP Bootcamp — Udemy</li>
-    <li>Node.js, Express, MongoDB &amp; More: The Complete Bootcamp — Udemy <a href="https://www.udemy.com/certificate/UC-3b083073-814e-4f53-8e5f-92256127e32e/" target="_blank">Certificate</a></li>
-    <li>The Ultimate React Course 2025: React, Next.js, Redux &amp; More — Udemy <a href="https://www.udemy.com/certificate/UC-1594f46f-739b-4902-9dee-7cf213e7dbb7/" target="_blank">Certificate</a></li>
+    <li>Node.js, Express, MongoDB &amp; More: The Complete Bootcamp — Udemy &nbsp;<a href="https://www.udemy.com/certificate/UC-3b083073-814e-4f53-8e5f-92256127e32e/" target="_blank">Certificate</a></li>
+    <li>The Ultimate React Course 2025: React, Next.js, Redux &amp; More — Udemy &nbsp;<a href="https://www.udemy.com/certificate/UC-1594f46f-739b-4902-9dee-7cf213e7dbb7/" target="_blank">Certificate</a></li>
   </ul>
 
 </div>
-        <div class="button-container">
-            <button class="no-print" onclick="window.open('/download')">
-                Download PDF
-            </button>
-        </div>
+<div class="button-container">
+  <button class="no-print" onclick="window.open('/download')">Download PDF</button>
+</div>
 </body>
 </html>
