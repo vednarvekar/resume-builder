@@ -1,0 +1,128 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=13mm, right=13mm, top=11mm, bottom=11mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+% Clean, modern sans-serif font matching your original aesthetic
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Exact CSS Color Variable Mapping
+\definecolor{dark}{HTML}{1A1A1A}
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{gray}{HTML}{4B5563}
+\definecolor{lgray}{HTML}{9CA3AF}
+\definecolor{rule}{HTML}{E5E7EB}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent
+}
+
+% Font Sizing Macros Mapping 1:1 to CSS Points & Line Heights
+\newcommand{\fontsizeheader}{\fontsize{22}{25}\selectfont}
+\newcommand{\fontsizesection}{\fontsize{8.2}{11}\selectfont}
+\newcommand{\fontsizemeta}{\fontsize{8.2}{12}\selectfont}
+\newcommand{\fontsizetitle}{\fontsize{10}{13}\selectfont}
+\newcommand{\fontsizebody}{\fontsize{9}{14}\selectfont}
+
+\color{dark}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Reusable Component for Section Rules
+\newcommand{\resumesection}[1]{%
+    \vspace{8pt}
+    {\color{accent}\fontsizesection\textbf{\MakeUppercase{#1}}}
+    \vspace{2pt}
+    {\color{rule}\hrule height 0.5pt}
+    \vspace{4pt}
+}
+
+\begin{document}
+\begin{center}
+    {\fontsizeheader\textbf{VED NARVEKAR}}\\[4pt]
+    {\fontsizemeta\color{gray} Mumbai, India \hspace{2pt}{\color{lgray}|}\hspace{2pt} 9323021709 \hspace{2pt}{\color{lgray}|}\hspace{2pt} \href{mailto:ved.v.narvekar@gmail.com}{ved.v.narvekar@gmail.com} \hspace{2pt}{\color{lgray}|}\hspace{2pt} \href{https://vednarvekar.com}{vednarvekar.com} \hspace{2pt}{\color{lgray}|}\hspace{2pt} \href{https://github.com/vednarvekar}{github.com/vednarvekar} \hspace{2pt}{\color{lgray}|}\hspace{2pt} \href{https://linkedin.com/in/vednarvekar}{linkedin.com/in/vednarvekar}}
+\end{center}
+\vspace{2pt}
+
+\resumesection{Summary}
+{\fontsizebody Backend \& AI Engineer with hands-on experience building production-grade systems — high-throughput API gateways handling 6,000+ RPS, autonomous LLM-powered CLI agents with multi-provider support, and ML-backed web applications with measurable performance outcomes. Proficient in Node.js, TypeScript, Python, system design, and applied AI/ML. Seeking backend or AI engineering internships to ship reliable, impactful production features.\par}
+
+\resumesection{Education}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\fontsizetitle\textbf{Mumbai University — B.E. Artificial Intelligence \& Machine Learning}} & {\fontsizemeta\color{gray}\textit{Expected Apr 2028}}
+\end{tabularx}
+\vspace{1pt}
+{\fontsizemeta\color{gray} Universal College of Engineering, Mumbai \hspace{3pt}|\hspace{3pt} Discipline \& Anti-Ragging Committee Head\par}
+
+\resumesection{Experience}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\fontsizetitle\textbf{Backend Engineer Intern — SR India}} & {\fontsizemeta\color{gray}\textit{Jan 2026 -- Feb 2026 $\cdot$ Remote}}
+\end{tabularx}
+\vspace{2pt}
+\begin{itemize}[leftmargin=12pt, labelsep=6pt, itemsep=1.5pt, topsep=0pt, parsep=0pt]
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Engineered REST APIs for a hotel booking platform (Node.js, Express, PostgreSQL) covering 4 core modules — bookings, room availability, user management, and admin controls — with JWT auth and RBAC.}
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Improved API performance and reliability through targeted query optimization, input validation, and Redis caching; eliminated redundant DB calls across high-frequency booking endpoints.}
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Integrated all endpoints into a React dashboard and maintained Postman collections documenting request/response contracts, enabling zero back-and-forth handoffs with the frontend team.}
+\end{itemize}
+
+\resumesection{Projects}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\fontsizetitle\textbf{resolv — AI-Powered GitHub Issue Resolver CLI}} & {\fontsizemeta\href{https://github.com/vednarvekar/resolv-v2}{GitHub}} \\
+    {\fontsizemeta\color{gray}\textit{TypeScript $\cdot$ Node.js $\cdot$ LLM APIs $\cdot$ RAG Pipelines $\cdot$ ts-morph}} &
+\end{tabularx}
+\vspace{2pt}
+\begin{itemize}[leftmargin=12pt, labelsep=6pt, itemsep=1.5pt, topsep=0pt, parsep=0pt]
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Autonomous CLI agent that fetches GitHub issues, fingerprints repo coding patterns via RAG (ts-morph DNA extraction + NIM embeddings), and generates style-matched patches via an LLM tool-calling loop in under 60 seconds.}
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Unified 7 LLM providers (Anthropic, OpenAI, Gemini, Grok, OpenRouter, NVIDIA NIM, Ollama) behind a single OpenAI-compatible interface — switching providers requires one config change.}
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Shipped web search (Brave + DuckDuckGo fallback), codebase grep/write tools, persistent chat sessions (/resume, /sessions, /history), and repo-context compression cutting LLM token usage by \textasciitilde{}70\%.}
+\end{itemize}
+
+\vspace{5pt}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\fontsizetitle\textbf{API Gateway — High-Performance Reverse Proxy}} & {\fontsizemeta\href{https://github.com/vednarvekar/api-gateway}{GitHub}} \\
+    {\fontsizemeta\color{gray}\textit{Node.js $\cdot$ Fastify $\cdot$ TypeScript $\cdot$ Redis $\cdot$ PostgreSQL $\cdot$ Prometheus}} &
+\end{tabularx}
+\vspace{2pt}
+\begin{itemize}[leftmargin=12pt, labelsep=6pt, itemsep=1.5pt, topsep=0pt, parsep=0pt]
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Architected a production-grade API gateway from scratch reaching \textbf{\textasciitilde{}6,000 RPS at 250 concurrent users}, outperforming naive Express proxies by 4$\times$; load-tested with autocannon.}
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Implemented Redis sliding-window rate limiting, circuit breaking (opossum), response caching, JWT/RBAC, Prometheus metrics, and Drizzle ORM migrations — reduced downstream service load by \textasciitilde{}40\% under burst traffic.}
+\end{itemize}
+
+\vspace{5pt}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\fontsizetitle\textbf{Pixel — AI Image Authenticity Analyzer}} & {\fontsizemeta\href{https://github.com/vednarvekar/Pixel}{GitHub}} \\
+    {\fontsizemeta\color{gray}\textit{PyTorch $\cdot$ ResNet18 $\cdot$ Node.js $\cdot$ React $\cdot$ Supabase}} &
+\end{tabularx}
+\vspace{2pt}
+\begin{itemize}[leftmargin=12pt, labelsep=6pt, itemsep=1.5pt, topsep=0pt, parsep=0pt]
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Fine-tuned ResNet18 on 1,000+ images to classify real vs. AI-generated content, achieving \textbf{88\% validation accuracy} — exceeding the 80\% project benchmark.}
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Developed a multi-signal scoring pipeline (model confidence + EXIF metadata + perceptual hash) producing a 0--100 authenticity score; full-stack deployment with end-to-end inference under 1.2 seconds.}
+\end{itemize}
+
+\resumesection{Technical Skills}
+\vspace{1pt}
+\begin{tabularx}{\textwidth}{@{}p{28mm} X@{}}
+    \textbf{Languages:} & {\fontsizebody TypeScript, JavaScript, Python, C++} \\
+    \textbf{Backend:} & {\fontsizebody Node.js, Fastify, Express.js, REST APIs, System Design, Authentication, Authorization, RBAC} \\
+    \textbf{AI / ML:} & {\fontsizebody PyTorch, NumPy, Pandas, Scikit-learn, LangChain, RAG Pipelines, LLM Tool-calling, Prompt Engineering} \\
+    \textbf{Databases:} & {\fontsizebody PostgreSQL, MongoDB, Redis, Drizzle ORM, Database Design} \\
+    \textbf{DevOps:} & {\fontsizebody Linux, Git, GitHub Actions, Prometheus, Docker, AWS, Postman} \\
+    \textbf{Frontend:} & {\fontsizebody React, Next.js, HTML, CSS, MERN Stack} \\
+\end{tabularx}
+
+\resumesection{Certifications}
+\begin{itemize}[leftmargin=12pt, labelsep=6pt, itemsep=1.5pt, topsep=0pt, parsep=0pt]
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Complete Data Science, Machine Learning, DL \& NLP Bootcamp — Udemy}
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody Node.js, Express, MongoDB \& More: The Complete Bootcamp — Udemy \hspace{3pt} \href{https://www.udemy.com/certificate/UC-3b083073-814e-4f53-8e5f-92256127e32e/}{Certificate}}
+    \item[\raisebox{0.25ex}{\tiny$\bullet$}] {\fontsizebody The Ultimate React Course 2025: React, Next.js, Redux \& More — Udemy \hspace{3pt} \href{https://www.udemy.com/certificate/UC-1594f46f-739b-4902-9dee-7cf213e7dbb7/}{Certificate}}
+\end{itemize}
+
+\end{document}

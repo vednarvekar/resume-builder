@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ved Narvekar — Resume</title>
-<link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ved Narvekar – Resume</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="page">
@@ -12,107 +12,197 @@
   <!-- HEADER -->
   <div class="header">
     <h1>VED NARVEKAR</h1>
-    <div class="contact">
-      Mumbai, India <span class="sep">|</span>
-      9323021709 <span class="sep">|</span>
-      <a href="mailto:ved.v.narvekar@gmail.com">ved.v.narvekar@gmail.com</a> <span class="sep">|</span>
-      <a href="https://vednarvekar.com" target="_blank">vednarvekar.com</a> <span class="sep">|</span>
-      <a href="https://github.com/vednarvekar" target="_blank">github.com/vednarvekar</a> <span class="sep">|</span>
-      <a href="https://linkedin.com/in/vednarvekar" target="_blank">linkedin.com/in/vednarvekar</a>
+    <div class="title">Backend &amp; AI Engineer</div>
+    <div class="contact-row">
+      Mumbai, India <span class="sep">|</span> +91 9323021709 <span class="sep">|</span> ved.v.narvekar@gmail.com<br>
+      <a href="https://vednarvekar.com">vednarvekar.com</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/vednarvekar">github.com/vednarvekar</a>
+      <span class="sep">|</span>
+      <a href="https://linkedin.com/in/vednarvekar">linkedin.com/in/vednarvekar</a>
     </div>
   </div>
 
   <!-- SUMMARY -->
-  <div class="section-title">Summary</div>
-  <p class="summary">
-    Backend &amp; AI Engineer with hands-on experience building production-grade systems — high-throughput API gateways
-    handling 6,000+ RPS, autonomous LLM-powered CLI agents with multi-provider support, and ML-backed web applications
-    with measurable performance outcomes. Proficient in Node.js, TypeScript, Python, system design, and applied AI/ML.
-    Seeking backend or AI engineering internships to ship reliable, impactful production features.
-  </p>
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <div class="summary-text">
+      Backend &amp; AI Engineer with hands-on experience building production-grade systems — high-throughput API gateways
+      handling <strong>~4,000 RPS</strong>, autonomous LLM-powered CLI agents with multi-provider support, and ML-backed
+      web applications with measurable performance outcomes. Proficient in Node.js, TypeScript, Python, system design,
+      and applied AI/ML. Seeking backend or AI engineering internships to ship reliable, impactful production features.
+    </div>
+  </div>
 
   <!-- EDUCATION -->
-  <div class="section-title">Education</div>
-  <table class="row-table"><tr>
-    <td class="td-left"><span class="entry-title">Mumbai University — B.E. Artificial Intelligence &amp; Machine Learning</span></td>
-    <td class="td-right">Expected Apr 2028</td>
-  </tr></table>
-  <div class="sub-meta">Universal College of Engineering, Mumbai &nbsp;|&nbsp; Discipline &amp; Anti-Ragging Committee Head</div>
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">B.E. Artificial Intelligence &amp; Machine Learning — Mumbai University</div>
+        <div class="entry-date">Expected Apr 2028</div>
+      </div>
+      <div class="entry-sub">
+        Universal College of Engineering, Mumbai &nbsp;|&nbsp; Discipline &amp; Anti-Ragging Committee Head
+      </div>
+    </div>
+  </div>
 
   <!-- EXPERIENCE -->
-  <div class="section-title">Experience</div>
-  <table class="row-table"><tr>
-    <td class="td-left"><span class="entry-title">Backend Engineer Intern — SR India</span></td>
-    <td class="td-right">Jan 2026 – Feb 2026 · Remote</td>
-  </tr></table>
-  <ul class="bullets">
-    <li>Engineered REST APIs for a hotel booking platform (Node.js, Express, PostgreSQL) covering 4 core modules — bookings, room availability, user management, and admin controls — with JWT auth and RBAC.</li>
-    <li>Improved API performance and reliability through targeted query optimization, input validation, and Redis caching; eliminated redundant DB calls across high-frequency booking endpoints.</li>
-    <li>Integrated all endpoints into a React dashboard and maintained Postman collections documenting request/response contracts, enabling zero back-and-forth handoffs with the frontend team.</li>
-  </ul>
+  <div class="section">
+    <div class="section-title">Experience</div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Backend Engineer Intern — SR India</div>
+        <div class="entry-date">Jan 2026 – Feb 2026 · Remote</div>
+      </div>
+      <ul class="bullets">
+        <li>
+          Engineered <strong>REST APIs</strong> for a hotel booking platform (Node.js, Express, PostgreSQL) covering
+          <strong>4 core modules</strong> — bookings, room availability, user management, and admin controls —
+          with <strong>JWT auth and RBAC</strong>.
+        </li>
+        <li>
+          Improved API performance and reliability through targeted <strong>query optimization</strong>, input
+          validation, and <strong>Redis caching</strong>; eliminated redundant DB calls across high-frequency
+          booking endpoints.
+        </li>
+        <li>
+          Integrated all endpoints into a React dashboard and maintained <strong>Postman collections</strong>
+          documenting request/response contracts, enabling zero back-and-forth handoffs with the frontend team.
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <!-- PROJECTS -->
-  <div class="section-title">Projects</div>
+  <div class="section">
+    <div class="section-title">Projects</div>
 
-  <table class="row-table"><tr>
-    <td class="td-left">
-      <span class="entry-title">resolv — AI-Powered GitHub Issue Resolver CLI</span>
-      <span class="entry-stack">TypeScript · Node.js · LLM APIs · RAG Pipelines · ts-morph</span>
-    </td>
-    <td class="td-right"><a href="https://github.com/vednarvekar/resolv-v2" target="_blank">GitHub</a></td>
-  </tr></table>
-  <ul class="bullets">
-    <li>Autonomous CLI agent that fetches GitHub issues, fingerprints repo coding patterns via RAG (ts-morph DNA extraction + NIM embeddings), and generates style-matched patches via an LLM tool-calling loop in under 60 seconds.</li>
-    <li>Unified 7 LLM providers (Anthropic, OpenAI, Gemini, Grok, OpenRouter, NVIDIA NIM, Ollama) behind a single OpenAI-compatible interface — switching providers requires one config change.</li>
-    <li>Shipped web search (Brave + DuckDuckGo fallback), codebase grep/write tools, persistent chat sessions (/resume, /sessions, /history), and repo-context compression cutting LLM token usage by ~70%.</li>
-  </ul>
+    <!-- resolv -->
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">resolv — AI-Powered GitHub Issue Resolver CLI</div>
+        <a class="entry-link" href="https://github.com/vednarvekar/resolv-v2">github.com/vednarvekar/resolv-v2</a>
+      </div>
+      <div class="tech-stack">TypeScript · Node.js · LLM APIs · RAG Pipelines · ts-morph</div>
+      <ul class="bullets">
+        <li>
+          Autonomous CLI agent that fetches GitHub issues, fingerprints repo coding patterns via
+          <strong>RAG</strong> (ts-morph DNA extraction + NIM embeddings), and generates
+          <strong>style-matched patches</strong> via an LLM tool-calling loop in <strong>under 60 seconds</strong>.
+        </li>
+        <li>
+          Unified <strong>7 LLM providers</strong> (Anthropic, OpenAI, Gemini, Grok, OpenRouter, NVIDIA NIM, Ollama)
+          behind a single OpenAI-compatible interface — provider switch requires one config change.
+        </li>
+        <li>
+          Shipped web search (Brave + DuckDuckGo fallback), codebase grep/write tools, persistent chat sessions,
+          and repo-context compression cutting <strong>LLM token usage</strong>.
+        </li>
+      </ul>
+    </div>
 
-  <table class="row-table"><tr>
-    <td class="td-left">
-      <span class="entry-title">API Gateway — High-Performance Reverse Proxy</span>
-      <span class="entry-stack">Node.js · Fastify · TypeScript · Redis · PostgreSQL · Prometheus</span>
-    </td>
-    <td class="td-right"><a href="https://github.com/vednarvekar/api-gateway" target="_blank">GitHub</a></td>
-  </tr></table>
-  <ul class="bullets">
-    <li>Architected a production-grade API gateway from scratch reaching <strong>~6,000 RPS at 250 concurrent users</strong>, outperforming naive Express proxies by 4×; load-tested with autocannon.</li>
-    <li>Implemented Redis sliding-window rate limiting, circuit breaking (opossum), response caching, JWT/RBAC, Prometheus metrics, and Drizzle ORM migrations — reduced downstream service load by ~40% under burst traffic.</li>
-  </ul>
+    <!-- API Gateway -->
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">API Gateway — High-Performance Reverse Proxy</div>
+        <a class="entry-link" href="https://github.com/vednarvekar/api-gateway">github.com/vednarvekar/api-gateway</a>
+      </div>
+      <div class="tech-stack">Node.js · Fastify · TypeScript · Redis · PostgreSQL · Prometheus</div>
+      <ul class="bullets">
+        <li>
+          Architected a production-grade API gateway from scratch reaching
+          <strong>~4,000 RPS at 250 concurrent users</strong>, outperforming naive Express proxies by
+          <strong>4×</strong>; load-tested with autocannon.
+        </li>
+        <li>
+          Implemented <strong>Redis sliding-window rate limiting</strong>, circuit breaking (opossum), response
+          caching, JWT/RBAC, Prometheus metrics, and Drizzle ORM migrations, dynamic routing with PostgreSQL.
+        </li>
+      </ul>
+    </div>
 
-  <table class="row-table"><tr>
-    <td class="td-left">
-      <span class="entry-title">Pixel — AI Image Authenticity Analyzer</span>
-      <span class="entry-stack">PyTorch · ResNet18 · Node.js · React · Supabase</span>
-    </td>
-    <td class="td-right"><a href="https://github.com/vednarvekar/Pixel" target="_blank">GitHub</a></td>
-  </tr></table>
-  <ul class="bullets">
-    <li>Fine-tuned ResNet18 on 1,000+ images to classify real vs. AI-generated content, achieving <strong>88% validation accuracy</strong> — exceeding the 80% project benchmark.</li>
-    <li>Developed a multi-signal scoring pipeline (model confidence + EXIF metadata + perceptual hash) producing a 0–100 authenticity score; full-stack deployment with end-to-end inference under 1.2 seconds.</li>
-  </ul>
+    <!-- Pixel -->
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Pixel — AI Media Detection</div>
+        <a class="entry-link" href="https://github.com/vednarvekar/pixel-v2">github.com/vednarvekar/pixel-v2</a>
+      </div>
+      <div class="tech-stack">React · TypeScript · FastAPI · PyTorch · PostgreSQL · Supabase</div>
+      <ul class="bullets">
+        <li>
+          Built a full-stack image and video scanner that fuses <strong>ResNet-18 inference</strong>, EXIF/XMP/IPTC
+          and C2PA metadata heuristics, and <strong>Google Vision Web Detection</strong> into a weighted AI-probability
+          score (default <strong>85% model / 10% metadata / 5% web</strong>), verdict, reasoning, and signal breakdown.
+        </li>
+        <li>
+          Orchestrated React/Vite, Express/TypeScript, and a FastAPI/PyTorch model service with PostgreSQL scan
+          history and Supabase email/Google OAuth; supports media up to <strong>10 MB images</strong> and
+          <strong>100 MB videos</strong> with 30-second video analysis.
+        </li>
+      </ul>
+    </div>
+
+  </div>
 
   <!-- SKILLS -->
-  <div class="section-title">Technical Skills</div>
-  <table class="skills-table">
-    <tr><td class="sk-cat">Languages:</td><td class="sk-val">TypeScript, JavaScript, Python, C++</td></tr>
-    <tr><td class="sk-cat">Backend:</td><td class="sk-val">Node.js, Fastify, Express.js, REST APIs, System Design, Authentication, Authorization, RBAC</td></tr>
-    <tr><td class="sk-cat">AI / ML:</td><td class="sk-val">PyTorch, NumPy, Pandas, Scikit-learn, LangChain, RAG Pipelines, LLM Tool-calling, Prompt Engineering</td></tr>
-    <tr><td class="sk-cat">Databases:</td><td class="sk-val">PostgreSQL, MongoDB, Redis, Drizzle ORM, Database Design</td></tr>
-    <tr><td class="sk-cat">DevOps:</td><td class="sk-val">Linux, Git, GitHub Actions, Prometheus, Docker, AWS, Postman</td></tr>
-    <tr><td class="sk-cat">Frontend:</td><td class="sk-val">React, Next.js, HTML, CSS, MERN Stack</td></tr>
-  </table>
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <table class="skills-table">
+      <tr>
+        <td>Languages</td>
+        <td>TypeScript, JavaScript, Python, C++</td>
+      </tr>
+      <tr>
+        <td>Backend</td>
+        <td>Node.js, Fastify, Express.js, REST APIs, System Design, Authentication, RBAC</td>
+      </tr>
+      <tr>
+        <td>AI / ML</td>
+        <td>PyTorch, NumPy, Pandas, Scikit-learn, LangChain, RAG Pipelines, LLM APIs</td>
+      </tr>
+      <tr>
+        <td>Databases</td>
+        <td>PostgreSQL, MongoDB, Redis, Drizzle ORM, Database Design</td>
+      </tr>
+      <tr>
+        <td>DevOps</td>
+        <td>Linux, Git, GitHub Actions, Prometheus, Docker, AWS, Postman</td>
+      </tr>
+      <tr>
+        <td>Frontend</td>
+        <td>React, Next.js, HTML, CSS, MERN Stack</td>
+      </tr>
+    </table>
+  </div>
 
   <!-- CERTIFICATIONS -->
-  <div class="section-title">Certifications</div>
-  <ul class="bullets">
-    <li>Complete Data Science, Machine Learning, DL &amp; NLP Bootcamp — Udemy</li>
-    <li>Node.js, Express, MongoDB &amp; More: The Complete Bootcamp — Udemy &nbsp;<a href="https://www.udemy.com/certificate/UC-3b083073-814e-4f53-8e5f-92256127e32e/" target="_blank">Certificate</a></li>
-    <li>The Ultimate React Course 2025: React, Next.js, Redux &amp; More — Udemy &nbsp;<a href="https://www.udemy.com/certificate/UC-1594f46f-739b-4902-9dee-7cf213e7dbb7/" target="_blank">Certificate</a></li>
-  </ul>
+  <div class="section">
+    <div class="section-title">Certifications</div>
+
+    <div class="cert-item">
+      <span class="cert-name">Node.js, Express, MongoDB &amp; More: The Complete Bootcamp</span>
+      <a class="cert-link" href="https://www.udemy.com/certificate/UC-3b083073-814e-4f53-8e5f-92256127e32e/">Certificate ↗</a>
+    </div>
+
+    <div class="cert-item">
+      <span class="cert-name">The Ultimate React Course 2025: React, Next.js, Redux &amp; More</span>
+      <a class="cert-link" href="https://www.udemy.com/certificate/UC-1594f46f-739b-4902-9dee-7cf213e7dbb7/">Certificate ↗</a>
+    </div>
+
+    <div class="cert-item">
+      <span class="cert-name">Complete Data Science, Machine Learning, DL &amp; NLP Bootcamp</span>
+      <a class="cert" href="">In Progress</a>
+    </div>
+
+  </div>
 
 </div>
+
 <div class="button-container">
-  <button class="no-print" onclick="window.open('/download')">Download PDF</button>
+  <button class="no-print" onclick="window.location.href='/download'">Download PDF</button>
 </div>
+
 </body>
 </html>
